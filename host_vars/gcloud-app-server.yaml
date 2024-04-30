@@ -3,8 +3,8 @@ app:
     server.port: "{{app_port}}"
     spring.datasource.username: appuser
     spring.datasource.password: apppassword
-    spring.datasource.url: jdbc:postgresql://4.211.249.239:5432/appdb
+    spring.datasource.url: jdbc:postgresql://13.74.185.80:5432/appdb
 
 service:
-  workingdir: "/home/rg/spring"
-  execstart: "java -jar target/springbootdemo-0.0.1-SNAPSHOT.jar"
+  workingdir: "/home/cinitron/spring"
+  execstart: "java -jar target/demo-0.0.1-SNAPSHOT.jar"
