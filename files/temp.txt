@@ -1,0 +1,5 @@
+proxy_pass http://34.89.28.5:80; 	for gcloud appserver
+
+
+
+proxy_pass http://192.168.56.101:9090;	for vagrant appserver

@@ -15,8 +15,7 @@ location /api {
     proxy_set_header X-Forwarded-Proto $scheme;
     proxy_redirect off;
     proxy_buffering off;
-    rewrite ^/api/(.*) /$1 break;
-    proxy_pass http://192.168.56.101:9090;
+    proxy_pass http://34.89.28.5:80;
 }
 
 
