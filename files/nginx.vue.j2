@@ -16,7 +16,7 @@ location /api {
     proxy_redirect off;
     proxy_buffering off;
     rewrite ^/api/(.*) /$1 break;
-    proxy_pass http://192.168.56.101:9090;
+    proxy_pass http://13.74.185.80:9090;
 }
 
 
