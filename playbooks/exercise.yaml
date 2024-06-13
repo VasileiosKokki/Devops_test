@@ -35,6 +35,8 @@
     - name: Whoami
       command: whoami
       register: whoami_output
+      
+    - name: output whoami
       debug:
         var: whoami_output.stdout
 
