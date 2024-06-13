@@ -36,6 +36,8 @@
       community.docker.docker_compose:
         project_src: "{{ appdir }}"
         state: absent
+        vars:
+    	  ansible_python_interpreter: /bin/python3
 
     - name: Create and start services
       docker_compose:
