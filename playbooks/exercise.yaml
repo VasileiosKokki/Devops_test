@@ -33,7 +33,7 @@
         - "{{app.env | dict2items}}"
 
     - name: Tear down existing services
-      community.docker.docker_compose:
+      docker_compose:
         project_src: "{{ appdir }}"
         state: absent
         vars:
