@@ -32,8 +32,11 @@
       with_items:
         - "{{app.env | dict2items}}"
         
-    - name: Install docker-compose
+    - name: Whoami
       command: whoami
+      register: whoami_output
+      debug:
+        var: whoami_output.stdout
 
     - name: Tear down existing services
       community.docker.docker_compose:
