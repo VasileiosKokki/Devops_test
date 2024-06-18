@@ -3,7 +3,7 @@ app:
     server.port: "{{app_port}}"
     spring.datasource.username: appuser
     spring.datasource.password: apppassword
-    spring.datasource.url: jdbc:postgresql://13.74.185.80:5432/appdb
+    spring.datasource.url: jdbc:postgresql://4.185.30.177:5432/appdb
 
 service:
   workingdir: "/home/cinitron/spring"
