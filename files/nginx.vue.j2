@@ -16,7 +16,7 @@ location /api {
     proxy_redirect off;
     proxy_buffering off;
     rewrite ^/api/(.*) /$1 break;
-    proxy_pass http://localhost:9090;
+    proxy_pass {{backend_server_url}};
 }
 
 
